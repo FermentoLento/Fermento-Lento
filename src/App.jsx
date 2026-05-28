@@ -382,7 +382,7 @@ function Ticket({order,onClose,onNew,onSaved}) {
   order.items.forEach(i=>lines.push(" • "+i.qty+"x "+i.name+" — RD$ "+i.price*i.qty));
   lines.push("━━━━━━━━━━","*TOTAL: RD$ "+total+"*");
   if(order.notes)lines.push("","📝 "+order.notes);
-  const wa="https://wa.me/18096000000?text="+encodeURIComponent(lines.join("\n"));
+  const wa="https://wa.me/18296286471?text="+encodeURIComponent(lines.join("\n"));
   return (
     <div style={{position:"fixed",inset:0,background:"rgba(0,0,0,0.92)",display:"flex",alignItems:"center",justifyContent:"center",zIndex:300,padding:14,overflowY:"auto"}}>
       <div style={{background:"#F8F2E8",maxWidth:360,width:"100%",borderRadius:8,boxShadow:"0 20px 70px rgba(0,0,0,0.8)",overflow:"hidden",fontFamily:"Georgia,serif",margin:"auto"}}>
@@ -616,7 +616,7 @@ export default function App() {
               <div style={{background:C.card,border:"1px solid "+C.border,borderRadius:9,overflow:"hidden",marginBottom:11}}>
                 <div style={{background:C.surface,padding:"8px 12px",fontSize:10,color:C.muted,letterSpacing:1}}>👤 TUS DATOS</div>
                 <div style={{padding:12,display:"flex",flexDirection:"column",gap:9}}>
-                  {[{label:"Nombre completo *",key:"name",type:"text",ph:"Tu nombre",icon:"👤"},{label:"Teléfono / WhatsApp",key:"phone",type:"tel",ph:"809-000-0000",icon:"📱"},{label:"Fecha de entrega",key:"delivery",type:"date",ph:"",icon:"📅"}].map(f=>(
+                  {[{label:"Nombre completo *",key:"name",type:"text",ph:"Tu nombre",icon:"👤"},{label:"Teléfono / WhatsApp",key:"phone",type:"tel",ph:"829-628-6471",icon:"📱"},{label:"Fecha de entrega",key:"delivery",type:"date",ph:"",icon:"📅"}].map(f=>(
                     <div key={f.key}>
                       <label style={{fontSize:10,color:C.muted,display:"block",marginBottom:3}}>{f.icon} {f.label}</label>
                       <input type={f.type} value={form[f.key]} placeholder={f.ph} onChange={e=>setForm(fm=>({...fm,[f.key]:e.target.value}))} style={{width:"100%",padding:"9px 10px",border:"1px solid "+C.border,borderRadius:6,fontFamily:"Georgia,serif",fontSize:13,background:C.surface,color:C.cream}}/>
