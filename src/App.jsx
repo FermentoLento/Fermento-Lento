@@ -212,7 +212,7 @@ function Membresia() {
         <div style={{fontFamily:"'Playfair Display',serif",fontSize:17,fontWeight:700,color:C.cream,marginTop:3}}>{plan.name}</div>
         <div style={{fontSize:19,fontWeight:700,color:plan.color,marginTop:3}}>RD$ {plan.price}<span style={{fontSize:11,color:C.muted}}>/sem</span></div>
       </div>
-      {[{l:"👤 Nombre",k:"name",t:"text",p:"Tu nombre"},{l:"📱 WhatsApp",k:"phone",t:"tel",p:"809-000-0000"},{l:"📍 Dirección",k:"addr",t:"text",p:"Calle, sector, ciudad"}].map(f=>(
+      {[{l:"👤 Nombre",k:"name",t:"text",p:"Tu nombre"},{l:"📱 WhatsApp",k:"phone",t:"tel",p:"829-628-6471"},{l:"📍 Dirección",k:"addr",t:"text",p:"Calle, sector, ciudad"}].map(f=>(
         <div key={f.k} style={{marginBottom:10}}>
           <label style={{fontSize:11,color:C.muted,display:"block",marginBottom:4}}>{f.l}</label>
           <input type={f.t} value={form[f.k]} placeholder={f.p} onChange={e=>setForm(fm=>({...fm,[f.k]:e.target.value}))}
